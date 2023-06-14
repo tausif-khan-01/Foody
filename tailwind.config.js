@@ -3,9 +3,10 @@ module.exports = {
   content: ["*"],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--gradient-color-stops))',
-      }
+      fontFamily: {
+        'nunito': ['nunito', 'sans-serif'],
+        'MyFont': ['"My Font"', 'serif'] // Ensure fonts with spaces have " " surrounding it.
+      },
     },
   },
   plugins: [],
