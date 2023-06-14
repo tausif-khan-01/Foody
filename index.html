@@ -7,11 +7,11 @@
     <title>Foody | best foode ordering web site</title>
   </head>
   <body
-    class="bg-[#111111] font-nunito text-white before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:-z-10 before:flex before:w-full before:bg-[linear-gradient(_124deg_in_oklab,_oklch(100%_0.00_298_/_70%)_-37%_-37%,_-6%,_oklch(88%_0_200_/_0%)_16%_86%,_106%,_oklch(100%_0.00_140_/_36%)_137%_137%_)] before:blur-3xl before:content-['']"
+    class="mx-auto max-w-7xl overflow-hidden bg-[#111111] font-nunito text-white before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:-z-10 before:flex before:w-full before:bg-[linear-gradient(_124deg_in_oklab,_oklch(100%_0.00_298_/_70%)_-37%_-37%,_-6%,_oklch(88%_0_200_/_0%)_16%_86%,_106%,_oklch(100%_0.00_140_/_36%)_137%_137%_)] before:blur-3xl before:content-['']"
   >
     <div class="bg-cover bg-center bg-no-repeat">
       <header class="mt-12 w-full">
-        <nav class="container flex items-center justify-around px-6">
+        <nav class="container mx-6 flex items-center justify-between px-6">
           <div class="relative flex items-center justify-center">
             <div
               class="absolute -z-10 h-10 w-[2.8125rem] rounded-full bg-[#FF2F30]"
@@ -51,18 +51,64 @@
           </ul>
         </nav>
       </header>
-      <main>
-        <section class="flex ">
-          <div class="">
-            <button>
-              <img src="./public/login-icon.svg" alt="">
-              <span>Tasty food forever</span>
+      <main class="container mx-6 my-auto px-6">
+        <section class="mt-10 flex items-center justify-between">
+          <div class="flex-1">
+            <button
+              class="my-6 flex items-center gap-2 rounded-full border border-[#FF2F30] bg-[#FF2F30] bg-opacity-[5%] px-3 py-1"
+            >
+              <img src="/TastyFood-icon.svg" alt="" />
+              <span class="text-lg">Tasty food forever</span>
             </button>
-            <h1>
-              
+            <h1 class="text-5xl font-black leading-[4.375rem]">
+              Eat Your Chiken Just <br />
+              How <span class="text-[#FF2F30]">You Like it</span>
             </h1>
+            <p
+              class="max-w-[40ch] text-xl font-semibold tracking-[0.02em] text-white opacity-50"
+            >
+              Chicken thighs, chicken drumsticks, buffalo hot sauce, cayenne
+              pepper, garlic powder
+            </p>
+            <div class="flex gap-6 py-14">
+              <button
+                class="flex items-center gap-2 rounded-full border border-[#FF2F30] bg-[#FF2F30] bg-opacity-75 px-3 py-1 shadow-lg shadow-[#FF2F30]/50"
+              >
+                Order Now
+              </button>
+              <button
+                class="flex items-center gap-2 rounded-full border border-white bg-white bg-opacity-[5%] px-3 py-1"
+              >
+                See Menu
+              </button>
+            </div>
+            <div class="flex gap-5 text-white opacity-50">
+              <div class="">
+                <div class="text-2xl font-semibold">5.000+</div>
+                <div class="text-base">customer</div>
+              </div>
+              <div class="">
+                <div class="text-2xl font-semibold">8.000+</div>
+                <div class="text-base">Delivery</div>
+              </div>
+              <div class="">
+                <div class="text-2xl font-semibold">8.000+</div>
+                <div class="text-base">Rating</div>
+              </div>
+            </div>
           </div>
-          <div class=""></div>
+          <div class="flex flex-1 items-center justify-center pt-20 ">
+            <img
+              src="/KFC-img.png"
+              alt=""
+              class="animate-rotate relative"
+            />
+            <img class="absolute bottom-0" src="/chilli-img.png" alt="">
+            <img class="absolute left-0" src="/onion-img.png" alt="">
+            <img class="absolute top-0" src="/tomato-imgt.png" alt="">
+            <img class="absolute right-0" src="/mint-img.png" alt="">
+
+          </div>
         </section>
       </main>
     </div>
