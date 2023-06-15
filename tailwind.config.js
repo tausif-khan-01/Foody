@@ -8,14 +8,35 @@ module.exports = {
         MyFont: ['"My Font"', "serif"], // Ensure fonts with spaces have " " surrounding it.
       },
       animation: {
-        move: "move 3s infinite linear",
-        rotate: "rotate 25s infinite linear",
+        move: "move 80s infinite linear",
+        movexup: "movexup 5s infinite alternate linear",
+        moveyup: "moveyup 5s infinite alternate linear",
+        movexdown: "movexdown 5s infinite alternate linear",
+        rotate: "rotate 40s infinite linear",
       },
       keyframes: {
         move: {
           "0%": { transform: "rotate(0deg) translateX(40px) rotate(0deg)" },
           "100%": {
             transform: "rotate(360deg) translateX(40px) rotate(-360deg)",
+          },
+        },
+        movexup: {
+          "0%": { transform: " translateX(0px) " },
+          "100%": {
+            transform: " translate(25px,-25px)",
+          },
+        },
+        moveyup: {
+          "0%": { transform: " translateX(0px) " },
+          "100%": {
+            transform: " translate(-25px,25px)",
+          },
+        },
+        movexdown: {
+          "0%": { transform: " translateX(0px) " },
+          "100%": {
+            transform: " translate(-25px,-25px)",
           },
         },
         rotate: {
