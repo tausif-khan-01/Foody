@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
+
+.btn-red{
+    @apply flex items-center justify-center gap-2 rounded-full border border-[#FF2F30] bg-[#FF2F30] bg-opacity-75 px-3 py-1 shadow-lg shadow-[#FF2F30]/50
+}
+
 @tailwind utilities;
