@@ -3,7 +3,8 @@
 @tailwind components;
 
 .btn-red{
-    @apply flex items-center justify-center gap-2 rounded-full border border-[#FF2F30] bg-[#FF2F30] bg-opacity-75 px-3 py-1 shadow-lg shadow-[#FF2F30]/50
+    @apply flex items-center justify-center gap-2 rounded-full border border-[#FF2F30] bg-[#FF2F30] bg-opacity-75 px-3 py-1 shadow-lg shadow-[#FF2F30]/50 transition-all hover:opacity-90
 }
+
 
 @tailwind utilities;
