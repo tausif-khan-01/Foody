@@ -3,6 +3,10 @@ module.exports = {
   content: ["*"],
   theme: {
     extend: {
+      screens: {
+        'xs': '325px',
+        
+      },
       fontFamily: {
         nunito: ["nunito", "sans-serif"],
         MyFont: ['"My Font"', "serif"], // Ensure fonts with spaces have " " surrounding it.
