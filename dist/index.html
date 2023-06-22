@@ -8,22 +8,23 @@
   <title>Foody | best foode ordering web site</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <script type="module" crossorigin src="/assets/index-d7792151.js"></script>
-  <link rel="stylesheet" href="/assets/index-103463e0.css">
+  <script type="module" crossorigin src="/assets/index-4958f347.js"></script>
+  <link rel="stylesheet" href="/assets/index-288561bc.css">
 </head>
 
-<body class="mx-auto max-w-7xl overflow-x-hidden bg-[#111111] px-3 font-nunito text-white">
+<body class="mx-auto max-w-7xl overflow-x-hidden bg-[#111111] font-nunito text-white">
   <!-- <div class="bg-cover bg-center bg-no-repeat  "> -->
   <header class="mt-6 w-full sm:mt-12">
     <nav class="container mx-auto flex items-center justify-between sm:px-0">
-      <!-- Logo -->
+
+      <!-- Logo ---------------------------------------------------------------------------------------->
       <div class="relative flex items-center justify-center">
         <div class="absolute -z-10 h-10 w-[2.8125rem] rounded-full bg-[#FF2F30]"></div>
         <img src="/logo.svg" alt="logo" />
       </div>
 
       <!-- desktop ul 1 -->
-      <ul class="hidden items-center gap-10 text-[.9375rem] transition-colors md:flex">
+      <ul class="hidden items-center gap-10 text-[.9375rem] transition-colors md:flex ">
         <li class="">
           <a href="#" class="pb-2 hover:text-[#FF2F30]">Services</a>
         </li>
@@ -78,7 +79,7 @@
 
       <!-- Menu list -->
       <div id="Hambuger"
-        class="animate__animated animate__faster animateinout fixed bottom-0 left-0 right-0 top-0 z-40 hidden flex-col items-center justify-center text-center backdrop-blur-xl transition-all md:hidden">
+        class="animate__animated animate__faster animateinout fixed bottom-0 h-[100dvh] left-0 right-0 top-0 z-40 hidden flex-col items-center justify-center text-center backdrop-blur-xl transition-all md:hidden">
         <a href="#" class="block w-full"><span class="px-auto inline-block border-b py-5">Menu</span></a>
         <a href="#" class="block w-full"><span class="px-auto inline-block border-b py-5">Sevices</span></a>
         <a href="#" class="block w-full"><span class="px-auto inline-block border-b py-5">About</span></a>
@@ -87,9 +88,10 @@
     </nav>
   </header>
 
-  <!-- main -->
+  <!---- main ---------------------------------------------------------------------------------------------------------->
   <main class="container mx-auto sm:mx-auto">
-    <section class="mx-auto mb-28 mt-10 flex flex-col-reverse items-center justify-between lg:flex-row">
+    <section class=" mb-28 mt-10 flex flex-col-reverse items-center justify-between md:flex-row">
+      <!-- main left -->
       <div class="animate__animated animate__slideInLeft flex-grow">
         <button
           class="my-6 mb-4 mt-8 flex items-center gap-2 rounded-full border border-[#FF2F30] bg-[#FF2F30] bg-opacity-[5%] px-3 py-1">
@@ -126,7 +128,9 @@
           </div>
         </div>
       </div>
-      <div class="animate__animated animate__zoomIn flex flex-shrink basis-1/2">
+
+      <!-- main right -->
+      <div class="animate__animated animate__zoomIn flex  w-1/2 ">
         <div class="relative flex items-center justify-center   sm:overflow-visible">
           <div class="overflow-hidden">
             <img src="/KFC-img.png" alt="" class="animate-rotate" />
@@ -139,16 +143,24 @@
         </div>
       </div>
     </section>
-    <section class="container mx-auto">
-      <div
+
+    <!-- cards -->
+    <section class="container mx-auto ">
+      <form action="" class="flex gap-1 p-2 items-center justify-start mb-6 relative">
+        <input type="text"  placeholder="Search" id="searchedText" autocomplete="off" 
+          class="bg-black text-white placeholder:text-gray-500 py-2 w-full pl-4 pr-8 focus:outline-2 focus:outline-white   rounded-full bg-opacity-5 border-2 border-[#ffffff7a] " />
+        <img src="/search-icon.svg" class=" absolute right-6" id="searchIcon" alt="Search" />
+        <svg xmlns="http://www.w3.org/2000/svg" id="clearSearch" class="hidden absolute right-6" fill="white" width="20" height="20" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.5 16.084l-1.403 1.416-4.09-4.096-4.102 4.096-1.405-1.405 4.093-4.092-4.093-4.098 1.405-1.405 4.088 4.089 4.091-4.089 1.416 1.403-4.092 4.087 4.092 4.094z"/></svg>
+      </form>
+      <div id="cards-container"
         class="animate__animated animate__fadeInUp cols-2 grid auto-rows-auto grid-cols-1 justify-around gap-y-12 px-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3">
-        <div
-          class="backdrop-blur-4xl mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff38] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
+        <div id="cards"
+          class="backdrop-blur-4xl  mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff38] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
           <div class="">
             <img src="/pngwing 6.png" alt="" />
           </div>
           <div class="flex flex-col gap-2">
-            <div class="text-lg">Chiken with Potato</div>
+            <div class="text-lg foodName">Lemon Pepper Chicken</div>
             <div class="text-sm opacity-50">Premimium recipe</div>
             <div class="text-xs">
               <div class="inline-block">
@@ -168,13 +180,13 @@
             </div>
           </div>
         </div>
-        <div
-          class="backdrop-blur-4xl mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
+        <div id="cards"
+          class="backdrop-blur-4xl  mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
           <div class="">
             <img src="/pngwing 7.png" alt="" />
           </div>
           <div class="flex flex-col gap-2">
-            <div class="text-lg">Slad for Chiken</div>
+            <div class="text-lg foodName">Garlic Parmesan Chicken</div>
             <div class="text-sm opacity-50">Premimium recipe</div>
             <div class="text-xs">
               <div class="inline-block">
@@ -194,13 +206,13 @@
             </div>
           </div>
         </div>
-        <div
-          class="backdrop-blur-4xl mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
+        <div id="cards"
+          class="backdrop-blur-4xl  mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
           <div class="">
             <img src="/pngwing 8.png" alt="" />
           </div>
           <div class="flex flex-col gap-2">
-            <div class="text-lg">Chiken with garlic</div>
+            <div class="text-lg foodName">Spicy Buffalo Wings</div>
             <div class="text-sm opacity-50">Premimium recipe</div>
             <div class="text-xs">
               <div class="inline-block">
@@ -220,13 +232,13 @@
             </div>
           </div>
         </div>
-        <div
-          class="backdrop-blur-4xl mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
+        <div id="cards"
+          class="backdrop-blur-4xl  mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
           <div class="">
             <img src="/pngwing 6.png" alt="" />
           </div>
           <div class="flex flex-col gap-2">
-            <div class="text-lg">Chiken with Potato</div>
+            <div class="text-lg foodName">Teriyaki Chicken Skewers</div>
             <div class="text-sm opacity-50">Premimium recipe</div>
             <div class="text-xs">
               <div class="inline-block">
@@ -246,13 +258,13 @@
             </div>
           </div>
         </div>
-        <div
-          class="backdrop-blur-4xl mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
+        <div id="cards"
+          class="backdrop-blur-4xl  mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
           <div class="">
             <img src="/pngwing 7.png" alt="" />
           </div>
           <div class="flex flex-col gap-2">
-            <div class="text-lg">Slad for Chiken</div>
+            <div class="text-lg foodName">Honey Mustard Chicken</div>
             <div class="text-sm opacity-50">Premimium recipe</div>
             <div class="text-xs">
               <div class="inline-block">
@@ -272,13 +284,13 @@
             </div>
           </div>
         </div>
-        <div
-          class="backdrop-blur-4xl mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
+        <div id="cards"
+          class="backdrop-blur-4xl  mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
           <div class="">
             <img src="/pngwing 8.png" alt="" />
           </div>
           <div class="flex flex-col gap-2">
-            <div class="text-lg">Chiken with garlic</div>
+            <div class="text-lg foodName">BBQ Chicken Pizza</div>
             <div class="text-sm opacity-50">Premimium recipe</div>
             <div class="text-xs">
               <div class="inline-block">
@@ -298,13 +310,13 @@
             </div>
           </div>
         </div>
-        <div
-          class="backdrop-blur-4xl mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
+        <div id="cards"
+          class="backdrop-blur-4xl  mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
           <div class="">
             <img src="/pngwing 6.png" alt="" />
           </div>
           <div class="flex flex-col gap-2">
-            <div class="text-lg">Chiken with Potato</div>
+            <div class="text-lg foodName">Creamy Garlic Chicken</div>
             <div class="text-sm opacity-50">Premimium recipe</div>
             <div class="text-xs">
               <div class="inline-block">
@@ -324,13 +336,13 @@
             </div>
           </div>
         </div>
-        <div
-          class="backdrop-blur-4xl mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
+        <div id="cards"
+          class="backdrop-blur-4xl  mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
           <div class="">
             <img src="/pngwing 7.png" alt="" />
           </div>
           <div class="flex flex-col gap-2">
-            <div class="text-lg">Slad for Chiken</div>
+            <div class="text-lg foodName">Sweet and Sour Chicken</div>
             <div class="text-sm opacity-50">Premimium recipe</div>
             <div class="text-xs">
               <div class="inline-block">
@@ -350,13 +362,13 @@
             </div>
           </div>
         </div>
-        <div
-          class="backdrop-blur-4xl mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
+        <div id="cards"
+          class="backdrop-blur-4xl  mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
           <div class="">
             <img src="/pngwing 8.png" alt="" />
           </div>
           <div class="flex flex-col gap-2">
-            <div class="text-lg">Chiken with garlic</div>
+            <div class="text-lg foodName">Orange Glazed Chicken</div>
             <div class="text-sm opacity-50">Premimium recipe</div>
             <div class="text-xs">
               <div class="inline-block">
@@ -376,13 +388,13 @@
             </div>
           </div>
         </div>
-        <div
-          class="backdrop-blur-4xl mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
+        <div id="cards"
+          class="backdrop-blur-4xl  mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
           <div class="">
             <img src="/pngwing 6.png" alt="" />
           </div>
           <div class="flex flex-col gap-2">
-            <div class="text-lg">Chiken with Potato</div>
+            <div class="text-lg foodName">Crispy Fried Chicken</div>
             <div class="text-sm opacity-50">Premimium recipe</div>
             <div class="text-xs">
               <div class="inline-block">
@@ -402,13 +414,13 @@
             </div>
           </div>
         </div>
-        <div
-          class="backdrop-blur-4xl mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
+        <div id="cards"
+          class="backdrop-blur-4xl  mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
           <div class="">
             <img src="/pngwing 7.png" alt="" />
           </div>
           <div class="flex flex-col gap-2">
-            <div class="text-lg">Slad for Chiken</div>
+            <div class="text-lg foodName">Butter Chicken Curry</div>
             <div class="text-sm opacity-50">Premimium recipe</div>
             <div class="text-xs">
               <div class="inline-block">
@@ -428,13 +440,13 @@
             </div>
           </div>
         </div>
-        <div
-          class="backdrop-blur-4xl mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
+        <div id="cards"
+          class="backdrop-blur-4xl  mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
           <div class="">
             <img src="/pngwing 8.png" alt="" />
           </div>
           <div class="flex flex-col gap-2">
-            <div class="text-lg">Chiken with garlic</div>
+            <div class="text-lg foodName">Thai Basil Chicken</div>
             <div class="text-sm opacity-50">Premimium recipe</div>
             <div class="text-xs">
               <div class="inline-block">
@@ -454,13 +466,13 @@
             </div>
           </div>
         </div>
-        <div
-          class="backdrop-blur-4xl mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
+        <div id="cards"
+          class="backdrop-blur-4xl  mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
           <div class="">
             <img src="/pngwing 6.png" alt="" />
           </div>
           <div class="flex flex-col gap-2">
-            <div class="text-lg">Chiken with Potato</div>
+            <div class="text-lg foodName">Butter Chiken</div>
             <div class="text-sm opacity-50">Premimium recipe</div>
             <div class="text-xs">
               <div class="inline-block">
@@ -480,13 +492,13 @@
             </div>
           </div>
         </div>
-        <div
-          class="backdrop-blur-4xl mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
+        <div id="cards"
+          class="backdrop-blur-4xl  mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
           <div class="">
             <img src="/pngwing 7.png" alt="" />
           </div>
           <div class="flex flex-col gap-2">
-            <div class="text-lg">Slad for Chiken</div>
+            <div class="text-lg foodName">Slad for Chiken</div>
             <div class="text-sm opacity-50">Premimium recipe</div>
             <div class="text-xs">
               <div class="inline-block">
@@ -506,13 +518,13 @@
             </div>
           </div>
         </div>
-        <div
-          class="backdrop-blur-4xl mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
+        <div id="cards"
+          class="backdrop-blur-4xl  mx-auto flex items-center justify-center gap-4 rounded-xl bg-gradient-to-b from-[#ffffff3f] p-4 drop-shadow-2xl transition-transform hover:scale-110 hover:shadow-lg sm:p-12">
           <div class="">
             <img src="/pngwing 8.png" alt="" />
           </div>
           <div class="flex flex-col gap-2">
-            <div class="text-lg">Chiken with garlic</div>
+            <div class="text-lg foodName">Chiken with garlic</div>
             <div class="text-sm opacity-50">Premimium recipe</div>
             <div class="text-xs">
               <div class="inline-block">
@@ -533,9 +545,16 @@
           </div>
         </div>
       </div>
+      <div id="sorry"
+        class="hidden">        
+        I'm sorry, but the dish you searched for is not found in our list. Please try searching for another dish or explore our menu for other delicious options.
+      </div>
     </section>
   </main>
+
   <hr class="w-100 mx-aut mt-20 text-center" color="" />
+
+  <!-- footer -->
   <footer class="">
     <!-- component -->
     <div class="flex w-full items-end">
