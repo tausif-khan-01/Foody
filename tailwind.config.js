@@ -48,6 +48,14 @@ module.exports = {
           "100%": { transform: "rotate(360deg)" },
         },
       },
+      gridTemplateColumns: {
+        // Simple 16 column grid
+        
+        'card': 'repeat(auto-fill, minmax( min(320px, 100%) , 1fr))',
+
+        // Complex site-specific column configuration
+    
+      }
     },
   },
   plugins: [],
